@@ -1,0 +1,9 @@
+#!/bin/bash
+
+sudo docker run \
+	-d \	
+	--privileged \
+	--name jenkins-slave_container \
+	--net infra  \
+	-url "http://jenkins:8080/" \
+	jenkins-slave 

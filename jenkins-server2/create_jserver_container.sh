@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# Create a Jenkins Container
 docker run\
 	--name jenkins_server_container \
 	-p 8080:8080 \
